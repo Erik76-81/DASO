@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    position: relative;
+    height:75px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+
+}
+
+h1 {
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    align-self: center;
+    display: flex;
+}
+
+.navbar>ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+}
+.navbar>ul>li{
+    align-self: center;
+}
+.navbar>ul>li>a {
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.3s;
+    color: #000;
+
+}
+
+#vv {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 5s;
+}
+
+/* #bc {
+    color: red;
+    background-color: rgb(255, 255, 255);
+    height: 10px;
+    width: 30px;
+    text-align: center;
+    overflow-y: hidden;
+    display: none;
+    animation-name: xy;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+
+}
+
+@keyframes xy {
+    100% {
+        height: 30px;
+
+    }
+} */
+
+#korz1 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+#closekorz1 {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    display: none;
+}
+
+#burg {
+    height: 70vh;
+    width: 200px;
+    border: solid rgb(218, 141, 0);
+    background-color: rgba(255, 255, 255, 0.877);
+    right: 0;
+    top: 105px;
+    /* bottom: 10px; */
+    position: fixed;
+    z-index: 2;
+    display: none;
+    animation-name: burg;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+@keyframes burg {
+    100% {
+        width: 300px;
+    }
+}
+
+#closeburger {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    display: none;
+    height: 40px;
+    width: 60px;
+}
+
+
+.burger-menu {
+    margin-left: 30px;
+    align-self: center;
+    display: none;
+    overflow-y: hidden;
+    position: relative;
+}
+
+/* #ver {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(218, 141, 0);
+    border-radius: 100px;
+    position: fixed;
+    bottom: 70px;
+    right: 85px;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    overflow-y: hidden;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+#ver>p {
+    line-height: 45px;
+    overflow-y: hidden;
+} */
+
+#burg {
+    display: none;
+}
+
+.burger-menu {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    display: none;
+    overflow-y: hidden;
+}
+
+.burger-menu>p {
+    cursor: pointer;
+    font-size: 50px;
+    margin-top: -5px;
+    color: rgb(255, 166, 0);
+}
+
+#burg>ul {
+    list-style: none;
+    margin-left: 25px;
+}
+
+#burg>ul>li {
+    border-bottom: 1px solid #000;
+}
+
+#burg>ul>li>a {
+    font-size: 28px;
+    text-decoration: none;
+    color: #000;
+}
+
+#burg>ul>li>a:hover {
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+
+#bc :hover {
+    background-color: rgb(245, 245, 245);
+}
+
+#bc :active {
+    background-color: rgb(243, 243, 243);
+}
+
+#bc>h5 {
+    overflow-y: hidden;
+}
+
+.navbar>ul>li>a>img {
+    height: 50px;
+    width: 50px;
+}
+
+.navbar>ul>li>a:hover {
+    color: rgb(255, 0, 0);
+}
+
+
+/* ...............................................header end.................................... */
+
+
+
+/* .......;;;;;;;;;;;.....................section start........................................... */
+
+
+
+
+
+section {
+    position: relative;
+    /* padding-bottom: 15%; */
+}
+
+#burg {
+    height: 70vh;
+    width: 200px;
+    border: solid rgb(218, 141, 0);
+    background-color: rgba(255, 255, 255, 0.877);
+    right: 0;
+    top: 105px;
+    /* bottom: 10px; */
+    position: fixed;
+    z-index: 2;
+    display: none;
+    animation-name: burg;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+@keyframes burg {
+    100% {
+        width: 300px;
+    }
+}
+
+#closeburger {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    display: none;
+    height: 40px;
+    width: 60px;
+}
+
+#korz {
+    height: 70vh;
+    width: 10px;
+    border: solid rgb(218, 141, 0);
+    background-color: rgba(255, 255, 255, 0.719);
+    right: 0;
+    top: 105px;
+    /* bottom: 10px; */
+    position: fixed;
+    z-index: 2;
+    display: none;
+    animation-name: korz;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes korz {
+    100% {
+        width: 300px;
+    }
+}
+
+
+.good-week {
+    display: flex;
+}
+
+h2 {
+    overflow-y: hidden;
+    color: rgb(235, 23, 8);
+}
+
+#ver {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(218, 141, 0);
+    border-radius: 100px;
+    position: fixed;
+    bottom: 70px;
+    right: 85px;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 48px;
+    overflow-y: hidden;
+    cursor: pointer;
+    transition: 2s;
+
+}
+
+#ver>p {
+    line-height: 50px;
+    overflow-y: hidden;
+}
+
+#cakes-pictures{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(../img/bakery-pictures.jpg);
+    background-position: center center;
+    background-size: cover; background-repeat: no-repeat;
+    height: 88vh;
+    border-radius: 25px;
+    line-height: 100px;
+}
+#cakes-pictures>div>p>a{
+    font-size: 50px;
+    color: rgb(255, 123, 0);
+}
+/* .chef-pictures{
+    height: 100%;
+    width: 600px;
+    background-image: url(../img/Без\ названия.png);
+    background-position: 40% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+/* .....................section end........................................... */
+
+
+
+
+/*.......................................... footer start .........................*/
+
+.footer {
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer>ul>li>b {
+    font-size: 25px;
+}
+
+.footer>ul>li>a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+    transition: 0.5s;
+}
+
+footer>div>ul {
+    list-style: none;
+}
+
+.footer>ul>li {
+    margin-top: 3%;
+}
+
+.footer>ul>li>a:hover {
+    color: red;
+}
+
+#footul {
+    margin-top: 35px;
+}
+
+#daso {
+    font-size: 64px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer2 {
+    margin-top: 7.5%;
+    text-align: center;
+    padding: 2.5% 0;
+    color: grey;
+    background-color: rgba(231, 189, 126, 0.5);
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:990px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .navbar>ul {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:620px) {
+    .footer>ul>li>a {
+        font-size: 17.5px;
+
+    }
+
+    .footer>ul>li>b {
+        font-size: 22.5px;
+    }
+}
+
+@media  screen and (max-width:580px) {
+    #cakes-pictures>div>p>a{
+        font-size: 40px;
+       
+    }
+}
+@media screen and (max-width:540px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer>ul {
+        text-align: center;
+    }
+
+    .footer>ul>li>a {
+        font-size: 20px;
+
+    }
+
+    .footer>ul>li>b {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:450px) {
+    #cakes-pictures>div>p>a{
+        font-size: 30px;
+        
+    }
+}
+@media screen and (max-width:315px) {
+    @keyframes burg {
+        100% {
+            width: 250px;
+        }
+    }
+
+    @keyframes korz {
+        100% {
+            width: 250px;
+        }
+    }
+
+    .d-block {
+        height: 50vh;
+    }
+
+    .bk-news {
+        height: 55vh;
+    }
+
+}

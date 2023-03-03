@@ -1,0 +1,718 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    height: 120px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 2%;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 2;
+
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    align-self: center;
+    display: flex;
+}
+
+.navbar>ul {
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    margin-right: 30px;
+    transition: 0.3s;
+    color: #000;
+
+}
+
+#vv {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: 3s;
+}
+
+/* #bc {
+    color: red;
+    background-color: rgb(255, 255, 255);
+    height: 10px;
+    width: 30px;
+    text-align: center;
+    overflow-y: hidden;
+    display: none;
+    animation-name: xy;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+
+} */
+
+#korz1 {
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+#closekorz1 {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    display: none;
+}
+
+.navbar>ul>li>a:hover {
+    color: rgb(255, 0, 0);
+}
+
+.burger-menu {
+    margin-left: 30px;
+    align-self: center;
+    display: none;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.burger-menu>p {
+    font-size: 50px;
+    margin-top: -30px;
+    color: rgb(255, 166, 0);
+    cursor: pointer;
+}
+
+#burg {
+    display: none;
+}
+
+#burg>ul>li {
+    border-bottom: 1px solid #000;
+}
+
+#burg>ul>li>a {
+    font-size: 24px;
+    text-decoration: none;
+    color: #000;
+}
+
+#burg>ul>li>a:hover {
+    color: rgb(255, 0, 0);
+    transition: 0.3s;
+}
+
+
+
+/* ........................................section strat............................... */
+
+section {
+    position: relative;
+    padding-bottom: 15%;
+}
+
+#burg {
+    height: 70vh;
+    width: 200px;
+    border: solid rgb(218, 141, 0);
+    background-color: rgba(255, 255, 255, 0.877);
+    right: 0;
+    top: 105px;
+    /* bottom: 10px; */
+    position: fixed;
+    z-index: 2;
+    display: none;
+    animation-name: burg;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    cursor: pointer;
+}
+
+@keyframes burg {
+    100% {
+        width: 300px;
+    }
+}
+
+#closeburger {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    position: absolute;
+    display: none;
+    height:40px;
+    width: 60px;
+}
+
+#korz {
+    height: 70vh;
+    width: 10px;
+    border: solid rgb(218, 141, 0);
+    background-color: rgba(255, 255, 255, 0.719);
+    right: 0;
+    top: 105px;
+    /* bottom: 10px; */
+    position: fixed;
+    z-index: 2;
+    display: none;
+    animation-name: korz;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+@keyframes korz {
+    100% {
+        width: 300px;
+    }
+}
+
+
+.good-week {
+    display: flex;
+}
+
+h2 {
+    overflow-y: hidden;
+    color: rgb(235, 23, 8);
+}
+
+#ver {
+    height: 50px;
+    width: 50px;
+    background-color: rgb(218, 141, 0);
+    border-radius: 100px;
+    position: fixed;
+    bottom: 70px;
+    right: 85px;
+    z-index: 2;
+    text-align: center;
+    font-size: 48px;
+    overflow-y: hidden;
+    cursor: pointer;
+    transition: 2s;
+
+}
+#ver>p {
+    line-height: 50px;
+    overflow-y: hidden;
+}
+#ver>p>a{
+    text-decoration: none;
+    color: white;
+}
+.bread {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 25px;
+    border-bottom: 2px dashed rgba(221, 130, 25, 0.548);
+
+}
+
+.bk-week {
+    height: 80vh;
+    width: 42.5%;
+    overflow-y: hidden;
+    border-radius: 10px;
+}
+
+#top-h2 {
+    padding-top: 25px;
+    text-align: center;
+}
+
+.bread-img {
+    background-image: url(../img/josefs-french-croissants.webp);
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 80vh;
+    overflow-y: hidden;
+}
+
+.bk-news {
+    border-radius: 10px;
+    height: 80vh;
+    width: 55%;
+    overflow-y: hidden;
+}
+
+.d-block {
+    border-radius: 10px;
+    height: 80vh;
+}
+
+.bakery {
+    border-radius: 10px;
+}
+
+.good-flex {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px dashed rgba(221, 130, 25, 0.548);
+    padding-bottom: 35px;
+}
+
+.goods {
+    margin-top: 3%;
+}
+
+.goods>h3 {
+    overflow-y: hidden;
+}
+
+.goods-bread>img {
+    border-radius: 10px;
+}
+
+.goods-bread1 {
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    overflow-y: hidden;
+}
+
+.good-pic {
+    background-image: url(../img/french-hac.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic {
+    transform: scale(1.02);
+}
+
+.bread-name-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.bread-name-flex>img {
+    height: 50px;
+    width: 50px;
+}
+
+.plus-minus {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.plus-minus>h5 {
+    overflow-y: hidden;
+    align-self: center;
+    margin-left: 15px;
+}
+
+.plus-minus>img {
+    height: 50px;
+    width: 50px;
+
+}
+
+.good-pic2 {
+    background-image: url(../img/Brown-Bread-1.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic2 {
+    transform: scale(1.02);
+}
+
+.good-pic3 {
+    background-image: url(../img/bred-3.webp);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic3 {
+    transform: scale(1.02);
+}
+
+.goods>h3 {
+    text-align: center;
+}
+
+.good-pic4 {
+    background-image: url(../img/image.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic4 {
+    transform: scale(1.02);
+}
+
+.good-pic5 {
+    background-image: url(../img/Enchanted_Energy_Cake.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic5 {
+    transform: scale(1.02);
+}
+
+.good-pic6 {
+    background-image: url(../img/cake2.webp);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic6 {
+    transform: scale(1.02);
+}
+
+.good-pic7 {
+    background-image: url(../img/HD-wallpaper-macarons.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic7 {
+    transform: scale(1.02);
+}
+
+.good-pic8 {
+    background-image: url(../img/josefs-french-croissants.webp);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic8 {
+    transform: scale(1.02);
+}
+
+.good-pic9 {
+    background-image: url(../img/marshmallows-sweets-chocolate.jpg);
+    height: 100%;
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.goods-bread1:hover .good-pic9 {
+    transform: scale(1.02);
+}
+
+/* ...........................................footer strat.............................................. */
+.footer {
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer>ul>li>b {
+    font-size: 25px;
+}
+
+.footer>ul>li>a {
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(156, 156, 156);
+    transition: 0.5s;
+}
+
+.footer>ul>li {
+    margin-top: 3%;
+}
+
+.footer>ul>li>a:hover {
+    color: red;
+}
+
+#footul {
+    margin-top: 35px;
+}
+
+#daso {
+    font-size: 64px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer2 {
+    margin-top: 7.5%;
+    text-align: center;
+    padding: 2.5% 0;
+    color: grey;
+    background-color: rgba(231, 189, 126, 0.5);
+}
+
+/* ...................................................footer end................................. */
+
+
+
+@media screen and (max-width:1000px) {
+    .burger-menu {
+        display: block;
+    }
+
+    #lih {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1230px) {
+    .goods-bread1 {
+        height: 200px;
+        width: 300px;
+    }
+
+    .goods-bread2 {
+        height: 200px;
+        width: 300px;
+    }
+
+    .goods-bread3 {
+        height: 200px;
+        width: 300px;
+
+    }
+
+    .goods-hover>h4>a {
+
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 200px;
+    }
+
+    .plus-minus {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
+
+
+
+@media screen and (max-width:920px) {
+    .goods-bread1 {
+        height: 150px;
+        width: 250px;
+    }
+
+    .goods-bread2 {
+        height: 150px;
+        width: 250px;
+    }
+
+    .goods-bread3 {
+        height: 150px;
+        width: 250px;
+
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .bk-week {
+        display: none;
+
+    }
+
+    .bk-news {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .goods-bread1 {
+        height: 150px;
+        width: 200px;
+    }
+
+    .goods-bread2 {
+        height: 150px;
+        width: 200px;
+    }
+
+    .goods-bread3 {
+        height: 150px;
+        width: 200px;
+
+    }
+
+    .bk-news {
+        width: 96%;
+    }
+
+}
+
+@media screen and (max-width:720px) {
+    .bk-news {
+        width: 98%;
+    }
+
+
+}
+
+@media screen and (max-width:620px) {
+    .goods-bread1 {
+        height: 100px;
+        width: 150px;
+    }
+
+    .goods-bread2 {
+        height: 100px;
+        width: 150px;
+    }
+
+    .goods-bread3 {
+        height: 100px;
+        width: 150px;
+
+    }
+
+    .goods>h3 {
+        font-size: 18px
+    }
+
+    .footer>ul>li>a {
+        font-size: 17.5px;
+
+    }
+
+    .footer>ul>li>b {
+        font-size: 22.5px;
+    }
+}
+
+
+@media screen and (max-width:540px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer>ul {
+        text-align: center;
+    }
+
+    .footer>ul>li>a {
+        font-size: 20px;
+
+    }
+
+    .footer>ul>li>b {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .good-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .goods-bread1 {
+        height: 200px;
+        width: 300px;
+    }
+
+    .plus-minus {
+        border-bottom: 1px solid rgb(218, 141, 0);
+    }
+
+
+
+
+}
+
+@media screen and (max-width:400px) {
+
+    .bakery {
+        overflow-y: hidden;
+    }
+
+    .bakery {
+        height: 70vh;
+    }
+
+    .goods-bread1 {
+        height: 150px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:315px) {
+    @keyframes burg {
+        100% {
+            width: 250px;
+        }
+    }
+
+    @keyframes korz {
+        100% {
+            width: 250px;
+        }
+    }
+    .d-block {
+        height: 50vh;
+    }
+    .bk-news {
+        height: 55vh;
+    }
+    
+}
